@@ -1,11 +1,15 @@
-.avatar img {
-    width: 100px;
+.avatar  {
+    margin-top: 50px;
+    width: 60px;
     height: auto;
-
+    border-radius: 50%;
+    border: 2px rgba(2,26,23,0.9) solid;
+    box-shadow: 0 0 10px #444;
 }
 
 .message {
     display: flex;
+    margin: 20px;
 }
 
 .message_text {
