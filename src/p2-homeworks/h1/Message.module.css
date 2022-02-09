@@ -1,0 +1,37 @@
+.avatar img {
+    width: 100px;
+    height: auto;
+
+}
+
+.message {
+    display: flex;
+}
+
+.message_text {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+    background: rgba(26, 26, 26, 0.9);
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.message_text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, rgba(26, 26, 26, 0.9) 51%) no-repeat right bottom;
+}
+
+.time {
+    text-align: right;
+    padding-right: 10px;
+    color: darkgoldenrod;
+}
+
