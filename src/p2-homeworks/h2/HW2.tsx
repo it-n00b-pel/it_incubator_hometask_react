@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 
 // types
 export type AffairPriorityType = "high" | "middle" | "low" // need to fix any
@@ -25,8 +26,7 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): a
 }
 
 export const deleteAffair = (affairs: any, _id: any): Array<AffairType> => { // need to fix any
-    let newAffairs = affairs.filter((aff: AffairType) => aff._id !== _id)
-    return newAffairs;// need to fix
+    return affairs.filter((aff: AffairType) => aff._id !== _id);// need to fix
 }
 
 function HW2() {
@@ -39,7 +39,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            <div style={homeW}>homeworks 2</div>
 
             {/*should work (должно работать)*/}
             <Affairs
@@ -48,10 +48,10 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+
         </div>
     )
 }

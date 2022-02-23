@@ -3,6 +3,7 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 
 function HW4() {
     const [text, setText] = useState<string>('')
@@ -17,12 +18,12 @@ function HW4() {
     }
 
     const [checked, setChecked] = useState<boolean>(false)
-    const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
+    const testOnChange = (e: ChangeEvent<HTMLInputElement>)=> setChecked(e.currentTarget.checked)
 
     return (
         <div>
-            <hr/>
-            homeworks 4
+
+            <div style={homeW}>homeworks 4</div>
 
             <div className={s.column}>
                 <SuperInputText
@@ -44,14 +45,15 @@ function HW4() {
                 </SuperButton>
 
                 <SuperButton
+
+
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
+                <SuperButton disabled>disabled
                 </SuperButton>
 
                 {/*----------------------------------------------------*/}
@@ -67,7 +69,7 @@ function HW4() {
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}

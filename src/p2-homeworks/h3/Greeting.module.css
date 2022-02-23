@@ -1,7 +1,39 @@
 .someClass {
+    width: 400px;
+    margin: 0 auto;
 
 }
 
 .error {
-    border: 1px solid red;
+    border: 5px solid red;
+}
+
+input {
+    background-color: rgba(213,213,213,0.9);
+}
+input:focus {
+    background-color: lightblue;
+}
+
+.someClass button {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(10, 10, 10, 0.66);
+    color: #fff;
+    padding:  2px 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.someClass button:active {
+    color: red;
+    font-size: 18px;
+}
+
+.someClass button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.53);
 }

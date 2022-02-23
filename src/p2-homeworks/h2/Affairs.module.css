@@ -1,3 +1,43 @@
-.someClass {
+.mainBlock {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-between;
 
 }
+
+.nameTask {
+    color: rgba(17, 16, 18, 0.9);
+    font-size: 24px;
+    width: 30%;
+    font-weight: bold;
+}
+
+.prioriryTask {
+    width: 30%;
+    color: rgba(2, 60, 57, 0.9);
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    width: 20%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+.buttons button {
+    width: 80px;
+    border-radius: 5px;
+    color: rgb(210, 210, 210);
+    background-color: rgba(35,35,35,0.9);
+    font-weight: bold;
+    font-size: 15px;
+}
+
