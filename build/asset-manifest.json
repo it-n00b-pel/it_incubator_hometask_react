@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/it_incubator_nometask-react-/static/css/main.cc9ccb8a.css",
-    "main.js": "/it_incubator_nometask-react-/static/js/main.b80bdc6e.js",
-    "static/media/hip-square.png": "/it_incubator_nometask-react-/static/media/hip-square.22f03fab06033dc3aca1.png",
-    "index.html": "/it_incubator_nometask-react-/index.html",
-    "main.cc9ccb8a.css.map": "/it_incubator_nometask-react-/static/css/main.cc9ccb8a.css.map",
-    "main.b80bdc6e.js.map": "/it_incubator_nometask-react-/static/js/main.b80bdc6e.js.map"
+    "main.css": "/it_incubator_hometask-react-/static/css/main.c18ad782.css",
+    "main.js": "/it_incubator_hometask-react-/static/js/main.e0fe5bbb.js",
+    "static/media/hip-square.png": "/it_incubator_hometask-react-/static/media/hip-square.22f03fab06033dc3aca1.png",
+    "index.html": "/it_incubator_hometask-react-/index.html",
+    "main.c18ad782.css.map": "/it_incubator_hometask-react-/static/css/main.c18ad782.css.map",
+    "main.e0fe5bbb.js.map": "/it_incubator_hometask-react-/static/js/main.e0fe5bbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc9ccb8a.css",
-    "static/js/main.b80bdc6e.js"
+    "static/css/main.c18ad782.css",
+    "static/js/main.e0fe5bbb.js"
   ]
 }
