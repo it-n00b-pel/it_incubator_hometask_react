@@ -1,4 +1,5 @@
 .navbar {
+    position: fixed;
     transform: translateX(-220px);
     transition: 1000ms;
     display: flex;
