@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    transform: translateX(-220px);
+    transform: translateX(-230px);
     transition: 1000ms;
     display: flex;
     flex-direction: row;
@@ -8,9 +8,10 @@
     margin-top: 5px;
     height: 30px;
     background-color: rgba(35,35,35);
-    width: 230px;
+    /*width: 230px;*/
     border-radius: 5px;
     box-shadow: 1px -1px 1px 1px rgb(58 58 59 / 50%);
+    padding: 5px;
 }
 
 .navbar:hover {

@@ -9,7 +9,7 @@ ReactDOM.render(
         {/*<BrowserRouter>*/}
             <App/>
         {/*</BrowserRouter>*/}
-
+        {document.title="Home tasks"}
     </React.StrictMode>,
     document.getElementById("root")
 )
