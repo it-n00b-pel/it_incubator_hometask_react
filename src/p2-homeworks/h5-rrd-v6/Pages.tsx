@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react"
 
-
-
-import { Route, Navigate, Routes} from "react-router-dom";
+import {Route, Navigate, Routes} from "react-router-dom";
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import Junior from "./pages/Junior";
 import JuniorPlus from "./pages/JuniorPlus";
 
 export const PATH = {
-    PRE_JUNIOR: '/pre-junior',
-    JUNIOR: '/junior',
-    JUN_PLUS: '/superJun'
+    PRE_JUNIOR: "/pre-junior",
+    JUNIOR: "/junior",
+    JUN_PLUS: "/superJun"
     // add paths
 }
 
@@ -23,15 +21,15 @@ function Pages() {
             <Routes>
 
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
-                <Route path={'/'} element={<Navigate to={PATH.PRE_JUNIOR}/>}/>
+                <Route path={"/"} element={<Navigate to={PATH.PRE_JUNIOR}/>}/>
 
-                <Route path={PATH.PRE_JUNIOR}  element={<PreJunior/>}/>
+                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
                 <Route path={PATH.JUNIOR} element={<Junior/>}/>
                 <Route path={PATH.JUN_PLUS} element={<JuniorPlus/>}/>
                 // add routes
 
                 {/*он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-                <Route path={'/*'} element={<Error404/>}/>
+                <Route path={"/*"} element={<Error404/>}/>
 
             </Routes>
         </div>

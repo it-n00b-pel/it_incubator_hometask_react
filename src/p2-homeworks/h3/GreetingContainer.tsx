@@ -1,5 +1,5 @@
-import React, {useState, ChangeEvent} from 'react'
-import Greeting from './Greeting'
+import React, {useState, ChangeEvent} from "react"
+import Greeting from "./Greeting"
 import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
@@ -13,8 +13,8 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string>('') // need to fix any
+    const [name, setName] = useState<string>("") // need to fix any
+    const [error, setError] = useState<string>("") // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         let name = e.currentTarget.value;
@@ -38,6 +38,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }
 
     }
+    let SOME_BOOLEAN = correctName(name);
 
     function correctName(name: string) {
         const letters = /^[A-Za-zА-Яа-я\-]+$/;
@@ -65,6 +66,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            SOME_BOOLEAN={SOME_BOOLEAN}
         />
     )
 }

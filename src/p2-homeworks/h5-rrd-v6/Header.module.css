@@ -7,7 +7,7 @@
     align-items: center;
     margin-top: 5px;
     height: 30px;
-    background-color: rgba(35,35,35);
+    background-color: rgba(35, 35, 35);
     /*width: 230px;*/
     border-radius: 5px;
     box-shadow: 1px -1px 1px 1px rgb(58 58 59 / 50%);
@@ -19,8 +19,6 @@
     transition: 500ms;
 }
 
-
-
 .item {
     font-weight: bold;
     color: #a7a7ea;
@@ -28,7 +26,8 @@
     margin-right: 10px;
     text-decoration: none;
 }
-.active{
+
+.active {
     margin-right: 10px;
     color: cornsilk;
 }
