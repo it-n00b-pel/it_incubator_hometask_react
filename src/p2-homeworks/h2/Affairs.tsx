@@ -6,6 +6,7 @@ type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (filter : FilterType)=> void
     deleteAffairCallback: (_id: number) => void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -28,10 +29,10 @@ function Affairs(props: AffairsPropsType) {
             {mappedAffairs}
 
             <div className={s.buttons}>
-                <button onClick={setAll}>All</button>
-                <button onClick={setHigh}>High</button>
-                <button onClick={setMiddle}>Middle</button>
-                <button onClick={setLow}>Low</button>
+                <button className={props.filter==="all"? s.active: ""} onClick={setAll}>All</button>
+                <button className={props.filter==="high"? s.active: ""} onClick={setHigh}>High</button>
+                <button className={props.filter==="middle"? s.active: ""} onClick={setMiddle}>Middle</button>
+                <button className={props.filter==="low"? s.active: ""} onClick={setLow}>Low</button>
             </div>
 
         </div>

@@ -41,3 +41,7 @@ img {
     font-size: 15px;
 }
 
+.buttons .active {
+    background-color: rgba(93, 71, 39, 0.66);
+}
+
