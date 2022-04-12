@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from "react"
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
@@ -6,6 +6,14 @@ import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 import h6 from "./HW6.module.css"
 function HW6() {
     const [value, setValue] = useState<string>('')
+
+    // useEffect(() => {
+    //     let valueAsString = localStorage.getItem('editable-span-value')
+    //     if (valueAsString) {
+    //         let newValue = JSON.parse(valueAsString)
+    //         setValue(newValue)
+    //     }
+    // }, [])
 
     const save = () => {
         saveState<string>('editable-span-value', value)
