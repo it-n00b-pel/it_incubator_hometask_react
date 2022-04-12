@@ -1,19 +1,23 @@
-import React from 'react'
-import Clock from './Clock'
+import React from "react"
+import Clock from "./Clock"
+import {homeW} from "../../p1-main/m1-ui/u1-app/App";
+import s from "./HW9.module.css"
 
 function HW9() {
     return (
         <div>
-            <hr/>
-            homeworks 9
+
+            <div style={homeW}>homeworks 8</div>
 
             {/*should work (должно работать)*/}
-            <Clock/>
+            <div className={s.context}>
+                <Clock/>
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeClock/>*/}
-            <hr/>
+
         </div>
     )
 }

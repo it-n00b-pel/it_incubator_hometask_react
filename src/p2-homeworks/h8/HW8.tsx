@@ -49,7 +49,7 @@ function HW8() {
     return (
         <div className={s.context}>
 
-            <div style={homeW}>homeworks 7</div>
+            <div style={homeW}>homeworks 8</div>
 
             {/*should work (должно работать)*/}
             {finalPeople}

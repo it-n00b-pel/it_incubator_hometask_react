@@ -1,0 +1,22 @@
+.context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+}
+
+.stringTime {
+    width: 150px;
+    font-weight: bold;
+}
+
+.data_info {
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.button_group {
+    position: absolute;
+    top: 80px;
+}
