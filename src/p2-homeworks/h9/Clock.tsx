@@ -33,6 +33,7 @@ function Clock() {
     const stringDate = date?.getFullYear() + ":" + date?.getMonth() + ":" + date?.getDate() // fix with date
 
     return (
+
         <div className={s.data_info}>
             <div className={s.stringTime}
                  onMouseEnter={onMouseEnter}

@@ -2,6 +2,7 @@ import React from "react"
 import Clock from "./Clock"
 import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 import s from "./HW9.module.css"
+import AlternativeClock from "./AlternativeClock";
 
 function HW9() {
     return (
@@ -16,7 +17,10 @@ function HW9() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeClock/>*/}
+            <br/>
+            <AlternativeClock/>
+        <br/>
+            <hr/>
 
         </div>
     )

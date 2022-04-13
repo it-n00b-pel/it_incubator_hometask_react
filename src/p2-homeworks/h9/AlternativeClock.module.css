@@ -1,0 +1,45 @@
+
+.alt_clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-color: #efefef;
+    height: 400px;
+    border-radius: 35px;
+    margin: 0 auto;
+    box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+
+}
+
+.dop_info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.mini_block {
+    border-right: #1a1919 solid 2px;
+}
+
+.main_clock {
+    font-weight: bold;
+    font-size: 110px;
+    text-align: center;
+}
+.text {
+    font-weight: bold;
+}
+.text_data {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.group_clock {
+    background-color: #a1a8a4;
+    margin-top: 35px;
+    width: 450px;
+    height: 270px;
+    border: #1a1919 solid 30px;
+    border-radius: 20px;
+}
