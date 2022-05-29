@@ -1,3 +1,5 @@
+@import "~antd/lib/slider/style/index.css";
+
 body {
     background-image: url("hip-square.png");
     margin: 0;
@@ -31,3 +33,23 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ant-slider {
+    width: 200px;
+}
+
+.ant-slider-step {
+    background-color: rgba(71, 124, 63, 0.59);
+}
+
+.ant-slider .ant-slider-track {
+    background-color: #000000;
+}
+
+.ant-slider-handle {
+    background-color: #880007;
+}
+
+
+
+

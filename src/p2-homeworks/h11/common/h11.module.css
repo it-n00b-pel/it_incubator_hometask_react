@@ -1,0 +1,7 @@
+.context {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    flex-direction: column;
+}

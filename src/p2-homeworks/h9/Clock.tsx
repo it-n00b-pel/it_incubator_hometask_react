@@ -39,7 +39,7 @@ function Clock() {
                  onMouseEnter={onMouseEnter}
                  onMouseLeave={onMouseLeave}
             >
-                {stringTime}
+                {stringTime.length>10? "" : stringTime}
             </div>
 
             {show && (

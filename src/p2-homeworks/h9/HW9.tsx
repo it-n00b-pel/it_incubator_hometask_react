@@ -8,11 +8,12 @@ function HW9() {
     return (
         <div>
 
-            <div style={homeW}>homeworks 8</div>
+            <div style={homeW}>homeworks 9</div>
 
             {/*should work (должно работать)*/}
             <div className={s.context}>
                 <Clock/>
+
             </div>
 
             <hr/>

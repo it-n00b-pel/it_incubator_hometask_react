@@ -1,24 +1,27 @@
-import React from 'react'
+import React from "react";
+import {Slider} from "antd";
+// import 'antd/dist/antd.css';
+import s from "./SuperDoubleRange.module.css"
 
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+type SuperDoubleRangePropstype = {
+    value1: number
+    value2: number
+    onChangeRangeV1: (value: number) => void
+    onChangeRangeV2: (value: number) => void
 }
 
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-        // min, max, step, disable, ...
+const SuperDoubleRange = (props: SuperDoubleRangePropstype) => {
+    const onChangeCallback = (value: [number, number]) => {
+        props.onChangeRangeV1(value[0])
+        props.onChangeRangeV2(value[1])
     }
-) => {
-    // сделать самому, можно подключать библиотеки
 
     return (
-        <>
-            DoubleRange
-        </>
-    )
-}
+        <div className={s.doubleRange}>
+            <Slider range value={[props.value1, props.value2]} onChange={onChangeCallback} tooltipVisible={false}
+                    disabled={props.value2 <= props.value1 + 10} />
+        </div>
+    );
+};
 
-export default SuperDoubleRange
+export default SuperDoubleRange;

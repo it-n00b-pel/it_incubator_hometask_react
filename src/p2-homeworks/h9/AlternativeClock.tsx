@@ -26,7 +26,7 @@ function AlternativeClock() {
            <div className={s.group_clock}>
                <div className={s.main_clock}>
                    {start()}
-                   {stringTime}
+                   {stringTime.length>10? "" : stringTime}
 
                </div>
                <hr/>
