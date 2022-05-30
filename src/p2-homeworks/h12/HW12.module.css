@@ -1,3 +1,11 @@
+.hw12 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
 .dark {
     background: dimgrey;
 }

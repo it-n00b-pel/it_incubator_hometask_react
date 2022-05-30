@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton"
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
@@ -13,14 +13,30 @@ function HW10() {
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.load)
     const dispatch = useDispatch()
     const setLoading = () => {
+
         // dispatch
         dispatch(loadingAC(true))
         // setTimeout
-        setTimeout(()=> {
-            dispatch(loadingAC(false))
-        }, 2000)
+        // setTimeout(()=> {
+        //     dispatch(loadingAC(false))
+        // }, 2000)
 
     };
+
+    useEffect(() => {
+        let id: any;
+        if (loading) {
+            // dispatch(loadingAC(true))
+             id = setTimeout(() => {
+                dispatch(loadingAC(false))
+            }, 2000)
+        }
+
+
+        return () => {
+            clearTimeout(id)
+        }
+    }, [loading])
 
     return (
 

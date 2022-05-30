@@ -4,8 +4,8 @@ import s from "../../HW7.module.css"
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    options?: any[]
-    onChangeOption?: (option: any) => void
+    options?: string[]
+    onChangeOption?: (option: string) => void
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = (
@@ -15,7 +15,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         ...restProps
     }
 ) => {
-    const mappedOptions: any[] = options ? options.map((o, i) => ( // map options with key
+    const mappedOptions:JSX.Element[] | string[] = options ? options.map((o) => ( // map options with key
         <option value={o} label={o}>
             {o}
         </option>

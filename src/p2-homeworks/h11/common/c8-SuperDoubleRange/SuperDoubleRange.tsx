@@ -12,6 +12,7 @@ type SuperDoubleRangePropstype = {
 
 const SuperDoubleRange = (props: SuperDoubleRangePropstype) => {
     const onChangeCallback = (value: [number, number]) => {
+        if (props.value2 <= props.value1 + 10) return
         props.onChangeRangeV1(value[0])
         props.onChangeRangeV2(value[1])
     }
