@@ -13,15 +13,8 @@ function HW10() {
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.load)
     const dispatch = useDispatch()
     const setLoading = () => {
-
-        // dispatch
         dispatch(loadingAC(true))
-        // setTimeout
-        // setTimeout(()=> {
-        //     dispatch(loadingAC(false))
-        // }, 2000)
-
-    };
+         };
 
     useEffect(() => {
         let id: any;
@@ -31,8 +24,6 @@ function HW10() {
                 dispatch(loadingAC(false))
             }, 2000)
         }
-
-
         return () => {
             clearTimeout(id)
         }
