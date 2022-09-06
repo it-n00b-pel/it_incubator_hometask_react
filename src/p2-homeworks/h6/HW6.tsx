@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
-import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import SuperButton from '../../../../../Friday/hw_14/src/components/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
 import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 import h6 from "./HW6.module.css"

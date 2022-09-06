@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton"
+import SuperButton from "../../../../../Friday/hw_14/src/components/common/c2-SuperButton/SuperButton"
 import s from "./HW9.module.css"
 
 function Clock() {

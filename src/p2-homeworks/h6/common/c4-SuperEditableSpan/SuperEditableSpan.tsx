@@ -1,5 +1,5 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react'
-import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
+import SuperInputText from '../../../../../../../Friday/hw_14/src/components/common/c1-SuperInputText/SuperInputText'
 import ed from '../../edit.png'
 import s from '../../HW6.module.css'
 

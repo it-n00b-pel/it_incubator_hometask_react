@@ -1,8 +1,8 @@
 import React, {ChangeEvent, useState} from 'react'
-import SuperInputText from './common/c1-SuperInputText/SuperInputText'
+import SuperInputText from '../../../../../Friday/hw_14/src/components/common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
-import SuperButton from './common/c2-SuperButton/SuperButton'
-import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import SuperButton from '../../../../../Friday/hw_14/src/components/common/c2-SuperButton/SuperButton'
+import SuperCheckbox from '../../../../../Friday/hw_14/src/components/common/c3-SuperCheckbox/SuperCheckbox'
 import {homeW} from "../../p1-main/m1-ui/u1-app/App";
 
 function HW4() {

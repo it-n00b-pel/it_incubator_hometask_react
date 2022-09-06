@@ -22,9 +22,7 @@ const Request: React.FC = () => {
     return (
         <div style={{textAlign:"center"}} >
             <Checkbox value={isCheck} onChange={onChangeHandler}/>
-
             <button onClick={onClickHandler}>post</button>
-
             <h1>{message}</h1>
         </div>
     );

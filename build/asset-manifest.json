@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/it_incubator_hometask_react/static/css/main.ec89284b.css",
-    "main.js": "/it_incubator_hometask_react/static/js/main.9e7a37b9.js",
+    "main.css": "/it_incubator_hometask_react/static/css/main.2f266cab.css",
+    "main.js": "/it_incubator_hometask_react/static/js/main.38ec2140.js",
     "static/media/hip-square.png": "/it_incubator_hometask_react/static/media/hip-square.22f03fab06033dc3aca1.png",
     "static/media/Gear-0.2s-200px.gif": "/it_incubator_hometask_react/static/media/Gear-0.2s-200px.d051a50bb2f1c0b58c0e.gif",
     "index.html": "/it_incubator_hometask_react/index.html",
-    "main.ec89284b.css.map": "/it_incubator_hometask_react/static/css/main.ec89284b.css.map",
-    "main.9e7a37b9.js.map": "/it_incubator_hometask_react/static/js/main.9e7a37b9.js.map"
+    "main.2f266cab.css.map": "/it_incubator_hometask_react/static/css/main.2f266cab.css.map",
+    "main.38ec2140.js.map": "/it_incubator_hometask_react/static/js/main.38ec2140.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec89284b.css",
-    "static/js/main.9e7a37b9.js"
+    "static/css/main.2f266cab.css",
+    "static/js/main.38ec2140.js"
   ]
 }
