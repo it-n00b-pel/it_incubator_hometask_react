@@ -2,7 +2,7 @@
   "name": "it_incubator_nometask-react-",
   "homepage": "https://it-n00b-pel.github.io/it_incubator_hometask_react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
